@@ -22,7 +22,13 @@ def random
 
 def square_root
     @squareroot = params["rootnom"].to_f
+
+    if @squareroot >=0
     @square_root = Math.sqrt(@squareroot).round(2)
+  else
+    @square_root = "not a real number. Nice try! :-P Positive numbers, only please.."
+  end
+
   render("square_root.html.erb")
   end
 
