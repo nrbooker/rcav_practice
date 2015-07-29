@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
   <div class="jumbotron">
@@ -15,6 +16,14 @@
 
   <div class="container">
     <%= yield %>
+  </div>
+  <div class="buttons">
+  <p><a href="/squarert">Square Root.</a></p>
+<p><a href="/squared">Squared.</a></p>
+<p><a href="/payment">Payment information.</a></p>
+<p><a href="/random>">Random number in range.</a></p>
+<p><a href="/instructions">Instructions</a></p>
+
   </div>
 </body>
 </html>
